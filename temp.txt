@@ -1,0 +1,100 @@
+
+
+<div id="contact" class="contact">
+    <!-- <h1>Contact Me</h1> -->
+    <div class="contact-form">
+      <!-- <label for="email">Email</label> -->
+      <input class="no-outline" type="email" name="email">
+      <br>
+      <!-- <label for="fName">First Name</label> -->
+      <input class="no-outline" type="email" name="fName">
+      <br>
+      <!-- <label for="email">Email</label> -->
+      <input class="no-outline" type="email" name="lName">
+      <br>
+      <!-- <label for="email">Message</label> -->
+      <textarea class="no-outline" name="message" cols="45" rows="3"></textarea>
+      <br>
+      <button type="button">Send Email</button>
+    </div>
+
+    <div class="contact-info">
+      <h3>contact info</h3>
+      <p><em><a>gauravrajpoot452@gmail.com</a></em></p>
+      <p><i class="fa-sharp fa-solid fa-phone"></i><em>+91995323945</em></p>
+      <p><i class="fa-solid fa-envelope"></i><em>gauravrajpoot452@gmail.com</em></p>
+      <i class="fa-solid fa-github"></i>
+    </div>
+  </div>
+  <!-- Skills section -->
+  <div id="my-skills" class="myskills">
+    <h1>Skills</h1>
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar">
+        <!-- <p class="per">90%</p> -->
+        <div class="skill-per" per="90" style="max-width:0%; background-color:orangered"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar">
+        <!-- <span class="per">90%</span> -->
+        <div class="skill-per" per="90" style="max-width:0%; background-color:blue"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">JAVASCRIPT</div>
+      <div class="skill-bar">
+        <!-- <p class="per">70%</p> -->
+        <div class="skill-per" per="70" style="max-width:0%; background-color:yellow"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">REACT JS</div>
+      <div class="skill-bar">
+        <!-- <p class="per">60%</p> -->
+        <div class="skill-per" per="60" style="max-width:0%; background-color:skyblue"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">NODE JS</div>
+      <div class="skill-bar">
+        <!-- <p class="per">60%</p> -->
+        <div class="skill-per" per="60" style="max-width:0%; background-color:green"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="social-links footer-part">
+      <p>Connect</p>
+      <a href="https://www.linkedin.com/in/gaurav-kumar-62298218b/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100009152708245" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+    </div>
+
+    <div class="navigation footer-part">
+      <p>Navigation</p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#my-skills">Skills</a></li>
+      </ul>
+    </div>
+
+  </div>

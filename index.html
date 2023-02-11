@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio Website</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="nav-logo">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <nav class="side-nav" show="0">
+    <ul>
+      <li><a href="#header" class="links">home</a></li>
+      <li><a href="#about" class="links">about</a></li>
+      <li><a href="#contact" class="links">contact</a></li>
+      <li><a href="#my-skills" class="links">skills</a></li>
+    </ul>
+  </nav>
+  <div id="header" class="header">
+
+    <div class="overlay">
+      <h1>Hello, I am <span></span></h1>
+      <a href="#contact">contact me</a>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#header" class="links">home</a></li>
+        <li><a href="#about" class="links">about</a></li>
+        <li><a href="#contact" class="links">contact</a></li>
+        <li><a href="#my-skills" class="links">skills</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div id="about" class="about">
+    <div class="image item">
+      <img src="./images/coding-person.jpg" alt="person-coding">
+    </div>
+    <div class="my-bio item">
+      <h2>About Me</h2>
+      <p>
+        I am extremely proficient in Front-End Development using HTML5, Cascade Style Sheets (CSS3), Bootstrap, Advance
+        Javascript, React.Js & Vue.Js And apart from Front-End, I have good knowledge in Back-End using Nodejs & Mongodb
+        as
+        well as i use MERN stack for software development, and continuously engage in trying to extend my skills with
+        new technology.
+      </p>
+      <!-- <br><br> -->
+      <h3>Coding Profile</h3>
+      <p><a href="https://auth.geeksforgeeks.org/user/gauravrajpoot452/" target="_blank">geeksforgeeks</a></p>
+    </div>
+  </div>
+
+
+  <div id="my-skills" class="myskills">
+    <h1>Skills</h1>
+    <div class="skill-section">
+
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="90" style="max-width:0%; background-color:orangered"><span>90%</span></div>
+      </div>
+
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar">
+        <!-- <span class="per">90%</span> -->
+        <div class="skill-per" per="90" style="max-width:0%; background-color:blue"><span>90%</span></div>
+      </div>
+
+      <div class="skill-name">JAVASCRIPT</div>
+      <div class="skill-bar">
+        <!-- <p class="per">70%</p> -->
+        <div class="skill-per" per="70" style="max-width:0%; background-color:yellow"><span>70%</span></div>
+      </div>
+
+      <div class="skill-name">REACT JS</div>
+      <div class="skill-bar">
+        <!-- <p class="per">60%</p> -->
+        <div class="skill-per" per="60" style="max-width:0%; background-color:skyblue"><span>60%</span></div>
+      </div>
+
+      <div class="skill-name">NODE JS</div>
+      <div class="skill-bar">
+        <!-- <p class="per">60%</p> -->
+        <div class="skill-per" per="60" style="max-width:0%; background-color:green"><span>60%</span></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- contact section -->
+  <div id="contact" class="contact">
+    <h1>Contact</h1>
+    <div class="contact-content">
+      <div class="contact-form">
+        <label for="email">Email</label>
+        <input class="no-outline form-controll" type="email" name="email">
+        <br>
+        <label for="fName">First Name</label>
+        <input class="no-outline form-controll" type="text" name="fName">
+        <br>
+        <label for="email">Last Name</label>
+        <input class="no-outline form-controll" type="text" name="lName">
+        <br>
+        <label for="email">Message</label>
+        <textarea class="no-outline form-controll" name="message" cols="45" rows="3"></textarea>
+        <br>
+        <button type="button">Send Email</button>
+      </div>
+      <div class="contact-info">
+        <ul>
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <span>+91 9953239545</span>
+          </li>
+          <li>
+            <span><i class="fa-regular fa-envelope"></i></span>
+            <span><a href="#" style="color:black">gauravrajpoot452@gmail.com</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="responsive-footer">
+    <h1>Stay Connected</h1>
+    <p>New Delhi, India</p>
+    <p><a href="http://www.gmail.com">gauravrajpoot452@gmail.com</a></p>
+    <p>(+91) 9953239545</p>
+    <div id="social-links">
+      <span>
+        <a href="http://" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </span>
+      <span>
+        <a href="http://" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </span>
+      <span>
+        <a href="http://" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </span>
+      <span>
+        <a href="http://" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </span>
+      <span>
+        <a href="http://" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </span>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="src/index.js"></script>
+</body>
+
+</html>

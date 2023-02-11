@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* scroll-behavior: smooth; */
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.blur{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+/* universl css for all elements */
+
+a{
+  text-decoration: none;
+  color: white;
+}
+li{
+  list-style-type: none;
+}
+div.breakline{
+  border: 1px solid #7393B3;
+  width: 80%;
+  margin: auto;
+}
+
+
+/* header overlay part */
+div.header .overlay{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url(../images/tim-van-der-kuip-CPs2X8JYmS8-unsplash.jpg) fixed center no-repeat;
+  background-size: cover;
+  color: white;
+  max-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding : 50vh 0;
+  text-align: center;
+}
+div.header .overlay h1{
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+div.header .overlay a{
+  font-size: 2rem;
+  color: white;
+  max-width: 10%;
+  background: lightgreen;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 100px;
+}
+div.header .overlay .header-content h1{
+  display: none;
+}
+
+/* Navbar Css */
+div.header .navbar, .side-nav{
+  position: absolute;
+  max-width: 100%;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+
+div.header .navbar ul{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: auto;
+}
+
+div.header .navbar ul li{
+  list-style-type: none;
+  margin: auto;
+  padding: 10px;
+}
+div.header .navbar a{
+  text-decoration: none;
+  color: white;
+  line-height: 3em;
+  transition: color 0.5s;
+}
+div.nav-logo{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  cursor: auto;
+}
+div.nav-logo div{
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+div.header .navbar a:hover{
+  color: lightgreen;
+}
+.side-nav ul{
+  max-width: 100%;
+  margin: auto 0;
+}
+.side-nav a:hover{
+  color: lightgreen;
+}
+
+
+/* About css */
+
+div.about{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 100%;
+  height: 100vh;
+}
+div.about .image img{
+  max-width: 600px;
+  height: 500px;
+}
+div.about .image{
+  max-width: 50%;
+  padding: 50px;
+}
+div.about .my-bio{
+  max-width: 50vw;
+  padding: 50px;
+  font-size: 1rem;
+  line-height: 3;
+}
+
+/* Contact css */
+
+div.contact{
+  max-width: 100%;
+  height: 100vh;
+}
+div.contact h1{
+  text-align: center;
+}
+div.contact .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+
+div.contact .contact-info{
+  max-width: 50%;
+  line-height: 4.5;
+}
+div.contact .contact-form .form-controll{
+  border: 1px solid #d9d9d9;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+}
+div.contact .contact-form input, button{
+  display: block;
+  outline: silver;
+}
+
+div.contact .contact-form textarea{
+  height: 132px;
+  resize: vertical;
+}
+
+div.contact .contact-form button{
+  padding: 10px;
+  width: 35%;
+  height: 55px;
+  background-color: lightgreen;
+  padding-left: 1.5rem!important;
+  padding-right: 1.5rem!important;
+  padding-bottom: 0.5rem!important;
+  padding-top: 0.5rem!important;
+  border-radius: 0!important;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(94, 94, 94, 0.2);
+}
+
+div.contact .contact-form .no-outline:focus{
+  border: 1px solid black;
+  outline: none;
+}
+
+/* my skills css */
+
+div.myskills{
+  background-color: rgb(130, 247, 130);
+  padding: 20px;
+  max-width: 100%;
+  height: 100vh;
+}
+div.myskills h1{
+  text-align: center;
+  padding: 20px;
+}
+div.myskills .skill-section{
+  width: 50%;
+  max-width: 600px;
+  padding: 0 20px;
+  margin: auto;
+}
+div.myskills .skill-section .skill-name{
+  font-size : 18px;
+  font-weight : 700;
+  margin: 20px 0;
+}
+
+div.myskills .skill-section .skill-bar{
+  height: 7px;
+  background-color: grey;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+div.myskills .skill-section .skill-bar .skill-per{
+  height: 7px;
+  border-radius: 5px;
+}
+
+.skill-per{
+  transition: max-width 2s;
+}
+.skill-per{
+  transition-timing-function: linear;
+}
+div.skill-per span{
+  background: white;
+  position: relative;
+  top: -350%;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+
+/* footer css */
+div#responsive-footer{
+  text-align: center;
+  line-height: 2;
+  background: black;
+  color: white;
+}
+
+div#social-links span a{
+  margin: 0 10px 0 10px;
+  color: white;
+  font-size: 2em;
+}
+
+/* -----------------------------------------> Media Queries for Responsiveness <------------------------------------ */
+
+/* @media only screen and (max-height:860) {
+  div.myskills .skill-section .skill-name{
+    margin: inherit;
+    color: red;
+  }
+  div.myskills .skill-section .skill-bar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+} */
+
+
+@media screen and (max-width:1024px) {
+  div.about .image img{
+    /* max-width: 110%; */
+    height: 30vh;
+  }
+  div.myskills .skill-section{
+    margin-top: 100px;
+  }
+
+}
+
+@media screen and (max-width:768px){
+  div.about{
+    padding : 0;
+  }
+  div.about .image{
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+    margin-top: 10px;
+
+  }
+  div#about .image img{
+    width: 300px;
+    height: 330px;
+  }
+  div#about .my-bio{
+    margin: 0;
+    line-height: 2;
+  }
+  div.myskills .skill-section{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    margin: auto;
+  }
+  div.myskills .skill-section .skill-name{
+    font-size : 18px;
+    font-weight : 700;
+    margin: 50px 0;
+  }
+  div.contact{
+    height: 70vh;
+  }
+  div.contact .contact-info{
+    display: none;
+  }
+}
+
+/* div.header .overlay h1 */
+@media only screen and (min-width: 767px){
+  .nav-logo, .side-nav{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  /* div.header .navbar{
+    display: none;
+  } */
+  div.about{
+    display: block;
+  }
+  .side-nav{
+    display: none;
+    top: 0px;
+    line-height: 3.2;
+    max-width: 30vw;
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 2rem;
+    z-index: 1;
+    transition: color 40s;
+  }
+  div.header .overlay h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  div.header .overlay{
+    background-size: cover;
+  }
+  div.header .navbar{
+    display: none;
+  }
+  div.about .image{
+    display: none;
+  }
+  div.about{
+    padding: 0;
+  }
+  div#about .my-bio{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+}
+@media screen and (max-width:736px){
+  div#my-skills{
+    padding: 0;
+  }
+  div.myskills .skill-section .skill-name{
+    font-size : 18px;
+    font-weight : 700;
+    margin: 0;
+  }
+  div.myskills .skill-section .skill-bar{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  div.contact .contact-content{
+    display: block;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+  }
+  div.my-bio{
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* landscape mobile phoes */
+@media screen and (max-width:684px), screen and (max-width:667px), screen and (max-width:734px), screen and (max-width:736px){
+  div#about .my-bio{
+    margin: 0 20px 0;
+    max-width: 80%;
+    padding: 0;
+  }
+  div#my-skills h1{
+    padding: 0;
+    /* padding-top: 8px;
+    padding-bottom: 15px; */
+  }
+  div.contact .contact-content{
+    display: block;
+    justify-content: center;
+    padding: 20px;
+    height: fit-content;
+  }
+  div.contact{
+    height: 10%;
+  }
+  div.contact-form{
+    width: 50%;
+    margin: auto;
+  }
+}
+/* portrait mobile phones */
+@media screen and (max-width:375px), screen and (max-width:412px) , screen and (max-width : 375px) , screen and (max-width: 414px){
+  div#about .my-bio{
+    max-width: 80%;
+  }
+  div#my-skills{
+    padding: 0;
+  }
+  div.myskills .skill-section .skill-name{
+    font-size : 18px;
+    font-weight : 700;
+    margin: 20px;
+  }
+  div.myskills .skill-section .skill-bar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  div.contact-content{
+    display: inline-block;
+  }
+  div.contact-form{
+    width: 100%;
+  }
+}
+
