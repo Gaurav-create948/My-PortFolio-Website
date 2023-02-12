@@ -258,3 +258,66 @@ div#social-links span a{
   font-size: 2em;
 }
 
+
+
+@media only screen and (max-width:900px){
+  nav.navbar{
+      display: none;
+  }
+  div#about{
+      display: block;
+      height: 50vh;
+  }
+  div.about .image img{
+      display: none;
+  }
+  div.about .my-bio{
+      max-width: 100%;  
+  }
+  div.myskills{
+      background-color: black;
+      padding: 20px;
+      max-width: 100%;
+      height: 100vh;
+      color: white;
+  }
+  div.skill-per span{
+      color: black;
+  }
+}
+@media only screen and (max-width:540px){
+  div#about{
+      height: 70vh;
+  }
+}
+@media only screen and (max-width:430px){
+  nav.navbar{
+      display: none;
+  }
+  div#about{
+      display: block;
+      height: 50vh;
+  }
+  div.about .image img{
+      display: none;
+  }
+  div.about .my-bio{
+      line-height: 1.8;
+  }
+}
+@media only screen and (max-width: 380px){
+  div#about{
+      height: 80vh;
+  }
+}
+@media only screen and (max-width: 375px){
+  div#about{
+      height: 60vh;
+  }
+}
+@media only screen and (max-width:320px){
+  div#about{
+      height: 100vh;
+  }
+}
+
