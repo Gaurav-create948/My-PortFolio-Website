@@ -35,7 +35,7 @@ navLogo.addEventListener("click", () => {
   }
   else{
     sideNav.setAttribute("show", "0");
-    sideNav.style.display = "none"; 
+    sideNav.style.display = "none";
   }
   links.forEach(element => {
     element.addEventListener("click", () => {

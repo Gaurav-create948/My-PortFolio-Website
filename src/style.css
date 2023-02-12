@@ -43,6 +43,15 @@ div.header .overlay a{
 
 
 /* Navbar Css */
+nav.side-nav{
+  display: none;
+  z-index: 2;
+  top: 10%;
+  right: 50%;
+  left: 40%;
+  font-size: 2rem;
+  line-height: 2;
+}
 div.header .navbar, .side-nav{
   position: absolute;
   max-width: 100%;
