@@ -86,9 +86,6 @@
         padding-bottom: 0;
         height: 100vh;
     }
-    /* div.myskills .skill-section{
-        max-width: 100%;
-    } */
     div.myskills .skill-section h1{
         font-size: 15px;
     }
@@ -97,7 +94,11 @@
         margin: 0;
     }
     div.myskills .skill-section .skill-bar{
-        margin-top: 15px;
+        height: 3px;
+        margin-top: 10px;
+    }
+    div.myskills .skill-section .skill-bar .skill-per{
+        height: 2px;
     }
     div.skill-per span{
         font-size: 10px;
