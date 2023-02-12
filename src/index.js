@@ -19,11 +19,11 @@ function smoothScroll(event) {
 
 // showing side navbar on small width devices
 let navLogo = document.querySelector(".nav-logo");
-let header = document.getElementById("header")
+let header = document.getElementById("header");
 let about = document.getElementById("about");
 let mySkills = document.getElementById("my-skills");
 let contact = document.getElementById("contact");
-let footer = document.getElementById("footer");
+let footer = document.getElementById("responsive-footer");
 
 navLogo.addEventListener("click", () => {
   let sideNav = document.querySelector(".side-nav");

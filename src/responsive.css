@@ -1,8 +1,10 @@
 /* Extra small devices (phoes, 600px and down) */
-@media only screen and (max-width:900px){
-    nav.navbar{
+@media only screen and (min-width:1240px) {
+    nav.side-nav, .nav-logo{
         display: none;
     }
+}
+@media only screen and (max-width:900px){
     div#about{
         display: block;
         height: 50vh;
@@ -20,8 +22,20 @@
         height: 100vh;
         color: white;
     }
+    div.myskills .skill-section{
+        max-width: 100%;
+    }
+    div.myskills .skill-section .skill-name{
+        margin-top: 0;
+    }
     div.skill-per span{
         color: black;
+    }
+    div.contact{
+        height: 60vh;
+    }
+    div.contact .contact-form{
+        max-width: 100%;
     }
 }
 @media only screen and (max-width:540px){
@@ -49,14 +63,73 @@
         height: 80vh;
     }
 }
-@media only screen and (max-width: 375px){
-    div#about{
-        height: 60vh;
-    }
-}
 @media only screen and (max-width:320px){
     div#about{
         height: 100vh;
     }
+    div#mykills{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 240px){
+    div#about{
+        height: 100vh;
+    }
+    div.about .my-bio{
+        font-size: 10px;
+    }
+    div.myskills{
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 100vh;
+    }
+    /* div.myskills .skill-section{
+        max-width: 100%;
+    } */
+    div.myskills .skill-section h1{
+        font-size: 15px;
+    }
+    div.myskills .skill-section .skill-name{
+        font-size: 10px;
+        margin: 0;
+    }
+    div.myskills .skill-section .skill-bar{
+        margin-top: 15px;
+    }
+    div.skill-per span{
+        font-size: 10px;
+        border-radius: none;
+    }
+    div.contact{
+        height: 100vh;
+    }
+    div.contact .contact-form{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    div.contact .contact-form h1{
+        font-size: 20px;
+    }
+    div.contact .contact-form label{
+        display: none;
+    }
+    div.contact .contact-form .form-controll{
+        max-width: 50%;
+        height: 20px;
+        margin: auto;
+        padding: 5px;
+        font-size: 10px;
+    }
+    div.contact .contact-form button{
+        width: 50%;
+        padding: 10px 0;
+        margin: auto;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    
 }
 

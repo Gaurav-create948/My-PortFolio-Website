@@ -39,15 +39,8 @@ div.header .overlay h1{
 div.header .overlay a{
   font-size: 2rem;
   color: white;
-  max-width: 10%;
-  background: lightgreen;
-  border-radius: 20px;
-  padding: 10px;
-  margin-top: 100px;
 }
-div.header .overlay .header-content h1{
-  display: none;
-}
+
 
 /* Navbar Css */
 div.header .navbar, .side-nav{
@@ -105,7 +98,6 @@ div.header .navbar a:hover{
 
 /* About css */
 div.about{
-  border: 2px solid yellow;
   background-color: black;
   color: white;
   padding: 0px 20px;
@@ -130,7 +122,7 @@ div.about .my-bio{
 
 /* my skills */
 div.myskills{
-  border: 5px solid greenyellow;
+  border: none;
   background-color: rgb(130, 247, 130);
   padding: 20px;
   max-width: 100%;
@@ -141,26 +133,29 @@ div.myskills h1{
   padding: 20px;
 }
 div.myskills .skill-section{
-  width: 50%;
-  max-width: 600px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 50%;
   padding: 0 20px;
   margin: auto;
 }
 div.myskills .skill-section .skill-name{
-  font-size : 18px;
+  font-size : 1rem;
   font-weight : 700;
   margin: 20px 0;
 }
 
 div.myskills .skill-section .skill-bar{
   height: 7px;
+  width: 100%;
+  display: inline-block;
   background-color: grey;
   border-radius: 5px;
-  margin-top: 30px;
 }
 div.myskills .skill-section .skill-bar .skill-per{
   height: 7px;
-  border-radius: 5px;
+  /* display: inline-block; */
 }
 .skill-per{
   transition: max-width 2s;
@@ -186,16 +181,12 @@ div.contact{
 div.contact h1{
   text-align: center;
 }
-div.contact .contact-content{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 30px;
-}
-
-div.contact .contact-info{
+div.contact .contact-form{
   max-width: 50%;
-  line-height: 4.5;
+  margin: auto;
+  padding: 50px ;
+  display: grid;
+  row-gap: 20px;
 }
 div.contact .contact-form .form-controll{
   border: 1px solid #d9d9d9;
@@ -214,22 +205,14 @@ div.contact .contact-form input, button{
   display: block;
   outline: silver;
 }
-
 div.contact .contact-form textarea{
   height: 132px;
   resize: vertical;
 }
-
 div.contact .contact-form button{
-  padding: 10px;
+  padding: 20px 5px;
   width: 35%;
-  height: 55px;
   background-color: lightgreen;
-  padding-left: 1.5rem!important;
-  padding-right: 1.5rem!important;
-  padding-bottom: 0.5rem!important;
-  padding-top: 0.5rem!important;
-  border-radius: 0!important;
   color: white;
   font-size: 1rem;
   font-weight: 400;
@@ -237,7 +220,6 @@ div.contact .contact-form button{
   border: none;
   box-shadow: 0px 0px 10px rgba(94, 94, 94, 0.2);
 }
-
 div.contact .contact-form .no-outline:focus{
   border: 1px solid black;
   outline: none;
