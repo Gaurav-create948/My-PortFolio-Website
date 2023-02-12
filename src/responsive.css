@@ -31,9 +31,6 @@
     div.skill-per span{
         color: black;
     }
-    div.contact{
-        height: 60vh;
-    }
     div.contact .contact-form{
         max-width: 100%;
     }
@@ -56,6 +53,9 @@
     }
     div.about .my-bio{
         line-height: 1.8;
+    }
+    div#mykills{
+        height: 100vh;
     }
 }
 @media only screen and (max-width: 380px){
@@ -132,7 +132,4 @@
     }
 }
 
-@media only screen and (min-width:900px) {
-    
-}
 
